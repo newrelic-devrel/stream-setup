@@ -16,7 +16,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
-        "prev_ver": 436273154,
+        "prev_ver": 452984832,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -27,7 +27,7 @@
         },
         "sync": 0,
         "versioned_id": "coreaudio_input_capture",
-        "volume": 1.0
+        "volume": 1
     },
     "AuxAudioDevice2": {
         "balance": 0.5,
@@ -46,7 +46,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux 2",
-        "prev_ver": 436273154,
+        "prev_ver": 452984832,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -57,7 +57,7 @@
         },
         "sync": 0,
         "versioned_id": "coreaudio_input_capture",
-        "volume": 1.0
+        "volume": 1
     },
     "AuxAudioDevice3": {
         "balance": 0.5,
@@ -76,7 +76,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux 3",
-        "prev_ver": 436273154,
+        "prev_ver": 452984832,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -87,10 +87,10 @@
         },
         "sync": 0,
         "versioned_id": "coreaudio_input_capture",
-        "volume": 1.0
+        "volume": 1
     },
-    "current_program_scene": "BRB",
-    "current_scene": "BRB",
+    "current_program_scene": "Summer Camp",
+    "current_scene": "Summer Camp",
     "current_transition": "Slide",
     "groups": [],
     "modules": {
@@ -106,7 +106,7 @@
             "caption_insert_newlines": false,
             "caption_line_count": 2,
             "caption_timeout_enabled": true,
-            "caption_timeout_secs": 15.0,
+            "caption_timeout_secs": 15,
             "enabled": true,
             "mute_source_name": "",
             "plugin_version": "0.18b",
@@ -152,7 +152,7 @@
         },
         "scripts-tool": []
     },
-    "name": "New Relic",
+    "name": "nr",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -180,8 +180,8 @@
     "saved_projectors": [],
     "scaling_enabled": false,
     "scaling_level": 0,
-    "scaling_off_x": 0.0,
-    "scaling_off_y": 0.0,
+    "scaling_off_x": 0,
+    "scaling_off_y": 0,
     "scene_order": [
         {
             "name": "Start"
@@ -200,6 +200,9 @@
         },
         {
             "name": "End"
+        },
+        {
+            "name": "Summer Camp"
         }
     ],
     "sources": [
@@ -219,8 +222,46 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Be Right Back",
-            "prev_ver": 436273154,
+            "name": "Webcam - right",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+                "fps": 30,
+                "fps_custom": false,
+                "height": 600,
+                "reroute_audio": false,
+                "restart_when_active": false,
+                "shutdown": false,
+                "url": "https://streamelements.com/overlay/60df3555f0b46d2a45020437/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "width": 800
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Camp",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -228,12 +269,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "https://streamelements.com/overlay/601dcd51f527db5df5713d70/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "url": "https://streamelements.com/overlay/60df33df34103b1ebfde6c7f/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
                 "width": 1920
             },
             "sync": 0,
             "versioned_id": "browser_source",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -243,15 +284,228 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Be Right Back": [],
-                "libobs.show_scene_item.Be Right Back": []
+                "libobs.hide_scene_item.Alerts": [],
+                "libobs.hide_scene_item.Camlink": [],
+                "libobs.hide_scene_item.Camp": [],
+                "libobs.hide_scene_item.Webcam - right": [],
+                "libobs.show_scene_item.Alerts": [],
+                "libobs.show_scene_item.Camlink": [],
+                "libobs.show_scene_item.Camp": [],
+                "libobs.show_scene_item.Webcam - right": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BRB",
-            "prev_ver": 436273154,
+            "name": "Summer Camp",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 1,
+                        "locked": false,
+                        "name": "Camp",
+                        "pos": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 2,
+                        "locked": false,
+                        "name": "Camlink",
+                        "pos": {
+                            "x": 729,
+                            "y": 732
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 0.39140623807907104,
+                            "y": 0.3916666805744171
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 3,
+                        "locked": false,
+                        "name": "Webcam - right",
+                        "pos": {
+                            "x": 550,
+                            "y": 620
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 4,
+                        "locked": false,
+                        "name": "Webcam - right",
+                        "pos": {
+                            "x": 1158,
+                            "y": 620
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 5,
+                        "locked": false,
+                        "name": "Alerts",
+                        "pos": {
+                            "x": 1348,
+                            "y": 131
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 0.2979166805744171,
+                            "y": 0.29814815521240234
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Starting Soon": [],
+                "libobs.show_scene_item.Starting Soon": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Start",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -264,8 +518,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -274,27 +528,33 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 1,
                         "locked": false,
-                        "name": "Be Right Back",
+                        "name": "Starting Soon",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -312,8 +572,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "2 Display - Back",
-            "prev_ver": 436273154,
+            "name": "Starting Soon",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -321,12 +581,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "https://streamelements.com/overlay/601dcfa46bef432acb217c33/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "url": "https://streamelements.com/overlay/601dd10f9b9346505109e731/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
                 "width": 1920
             },
             "sync": 0,
             "versioned_id": "browser_source",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -336,19 +596,15 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.2 Display - Back": [],
-                "libobs.hide_scene_item.Alerts": [],
-                "libobs.hide_scene_item.Camlink": [],
-                "libobs.show_scene_item.2 Display - Back": [],
-                "libobs.show_scene_item.Alerts": [],
-                "libobs.show_scene_item.Camlink": []
+                "libobs.hide_scene_item.Ending": [],
+                "libobs.show_scene_item.Ending": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "2 Display",
-            "prev_ver": 436273154,
+            "name": "End",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -356,13 +612,13 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 4,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -371,272 +627,33 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "2 Display - Back",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                        "hide_transition": {
+                            "duration": 0
                         },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Camlink",
-                        "pos": {
-                            "x": 1032.0,
-                            "y": 100.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.61640626192092896,
-                            "y": 0.61666667461395264
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Alerts",
-                        "pos": {
-                            "x": 571.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "1 Display - Back",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "url": "https://streamelements.com/overlay/60133ed737270307a5f55e89/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
-                "width": 1920
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Alerts",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "url": "https://streamelements.com/overlay/601dce1286fb2a422a4697ab/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
-                "width": 1920
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.1 Display - Back": [],
-                "libobs.hide_scene_item.Alerts": [],
-                "libobs.hide_scene_item.Camlink": [],
-                "libobs.show_scene_item.1 Display - Back": [],
-                "libobs.show_scene_item.Alerts": [],
-                "libobs.show_scene_item.Camlink": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "1 Display",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
                         "id": 1,
                         "locked": false,
-                        "name": "1 Display - Back",
+                        "name": "Ending",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                        "show_transition": {
+                            "duration": 0
                         },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Camlink",
-                        "pos": {
-                            "x": 586.0,
-                            "y": 76.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.98203122615814209,
-                            "y": 0.98194444179534912
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Alerts",
-                        "pos": {
-                            "x": 571.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -654,8 +671,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Webcam Cover",
-            "prev_ver": 436273154,
+            "name": "Ending",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -663,61 +680,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "https://streamelements.com/overlay/601dcf566bef433a992179a4/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "url": "https://streamelements.com/overlay/601dcdc2af71fa58c31f29b8/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
                 "width": 1920
             },
             "sync": 0,
             "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "av_capture_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Camlink",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device": "0x21000000fd90066",
-                "device_name": "Cam Link 4K"
-            },
-            "sync": 0,
-            "versioned_id": "av_capture_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "display_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Display Capture",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "versioned_id": "display_capture",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -741,7 +709,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Desktop",
-            "prev_ver": 436273154,
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -754,8 +722,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -764,27 +732,33 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 1,
                         "locked": false,
                         "name": "Display Capture",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     },
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -793,27 +767,33 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 2,
                         "locked": false,
                         "name": "Camlink",
                         "pos": {
-                            "x": 1281.0,
-                            "y": 689.0
+                            "x": 1281,
+                            "y": 689
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
                             "x": 0.47187501192092896,
-                            "y": 0.47222220897674561
+                            "y": 0.4722222089767456
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     },
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -822,27 +802,33 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 4,
                         "locked": false,
                         "name": "Webcam Cover",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     },
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -851,27 +837,88 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 5,
                         "locked": false,
                         "name": "Alerts",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "display_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Display Capture",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "display_capture",
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "av_capture_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Camlink",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color_space": -1,
+                "device": "0x71000000fd90066",
+                "device_name": "Cam Link 4K #2",
+                "input_format": 4294967295,
+                "preset": "AVCaptureSessionPreset1280x720",
+                "uid": "",
+                "use_preset": true,
+                "video_range": -1
+            },
+            "sync": 0,
+            "versioned_id": "av_capture_input",
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -889,8 +936,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Ending",
-            "prev_ver": 436273154,
+            "name": "Webcam Cover",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -898,12 +945,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "https://streamelements.com/overlay/601dcdc2af71fa58c31f29b8/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "url": "https://streamelements.com/overlay/601dcf566bef433a992179a4/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
                 "width": 1920
             },
             "sync": 0,
             "versioned_id": "browser_source",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -913,15 +960,19 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Ending": [],
-                "libobs.show_scene_item.Ending": []
+                "libobs.hide_scene_item.1 Display - Back": [],
+                "libobs.hide_scene_item.Alerts": [],
+                "libobs.hide_scene_item.Camlink": [],
+                "libobs.show_scene_item.1 Display - Back": [],
+                "libobs.show_scene_item.Alerts": [],
+                "libobs.show_scene_item.Camlink": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "End",
-            "prev_ver": 436273154,
+            "name": "1 Display",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -929,13 +980,13 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 1,
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -944,27 +995,103 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 1,
                         "locked": false,
-                        "name": "Ending",
+                        "name": "1 Display - Back",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 2,
+                        "locked": false,
+                        "name": "Camlink",
+                        "pos": {
+                            "x": 586,
+                            "y": 76
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 0.9820312261581421,
+                            "y": 0.9819444417953491
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 3,
+                        "locked": false,
+                        "name": "Alerts",
+                        "pos": {
+                            "x": 571,
+                            "y": 0
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -982,8 +1109,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Starting Soon",
-            "prev_ver": 436273154,
+            "name": "Alerts",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -991,12 +1118,44 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "height": 1080,
-                "url": "https://streamelements.com/overlay/601dd10f9b9346505109e731/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "url": "https://streamelements.com/overlay/601dce1286fb2a422a4697ab/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
                 "width": 1920
             },
             "sync": 0,
             "versioned_id": "browser_source",
-            "volume": 1.0
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "1 Display - Back",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 1080,
+                "url": "https://streamelements.com/overlay/60133ed737270307a5f55e89/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "width": 1920
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1
         },
         {
             "balance": 0.5,
@@ -1006,15 +1165,188 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Starting Soon": [],
-                "libobs.show_scene_item.Starting Soon": []
+                "libobs.hide_scene_item.2 Display - Back": [],
+                "libobs.hide_scene_item.Alerts": [],
+                "libobs.hide_scene_item.Camlink": [],
+                "libobs.show_scene_item.2 Display - Back": [],
+                "libobs.show_scene_item.Alerts": [],
+                "libobs.show_scene_item.Camlink": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Start",
-            "prev_ver": 436273154,
+            "name": "2 Display",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 4,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 4,
+                        "locked": false,
+                        "name": "2 Display - Back",
+                        "pos": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 2,
+                        "locked": false,
+                        "name": "Camlink",
+                        "pos": {
+                            "x": 1032,
+                            "y": 100
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 0.616406261920929,
+                            "y": 0.6166666746139526
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "id": 3,
+                        "locked": false,
+                        "name": "Alerts",
+                        "pos": {
+                            "x": 571,
+                            "y": 0
+                        },
+                        "private_settings": {},
+                        "rot": 0,
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "2 Display - Back",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 1080,
+                "url": "https://streamelements.com/overlay/601dcfa46bef432acb217c33/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "width": 1920
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Be Right Back": [],
+                "libobs.show_scene_item.Be Right Back": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "BRB",
+            "prev_ver": 452984832,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1027,8 +1359,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -1037,27 +1369,65 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "hide_transition": {
+                            "duration": 0
+                        },
                         "id": 1,
                         "locked": false,
-                        "name": "Starting Soon",
+                        "name": "Be Right Back",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0,
+                            "y": 0
                         },
                         "private_settings": {},
-                        "rot": 0.0,
+                        "rot": 0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1,
+                            "y": 1
                         },
                         "scale_filter": "disable",
+                        "show_transition": {
+                            "duration": 0
+                        },
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
+            "volume": 1
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Be Right Back",
+            "prev_ver": 452984832,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 1080,
+                "url": "https://streamelements.com/overlay/601dcd51f527db5df5713d70/TjHxlZKVwW09nUc1LGAeu38a2tco7wDhSlgvbF3viTb1EkJo",
+                "width": 1920
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1
         }
     ],
     "transition_duration": 500,
